@@ -1,0 +1,9 @@
+baseURL = "https://bryanporter.com/"
+languageCode = "en-us"
+title = "Hi, I'm Bryan."
+theme="hyde-hyde"
+
+[params.social]
+ twitter = "betaporter"
+ github = "brporter"
+ gravatar = "bryan@bryanporter.com"
