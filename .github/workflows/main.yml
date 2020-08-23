@@ -37,12 +37,10 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Run Hugo + AzCopy
       env:
-        SOURCE_DIRECTORY: aaronmsft-com/
         AZURE_STORAGE_CONTAINER_URL: https://bpsite.blob.core.windows.net/$web
         AZURE_STORAGE_SAS_TOKEN: ${{ secrets.AZURE_STORAGE_SAS_TOKEN }}
       run: |
         echo $PWD
-        cd $SOURCE_DIRECTORY
         export HUGO_ENV='production' 
         hugo -v
         azcopy sync public/ "${AZURE_STORAGE_CONTAINER_URL}${AZURE_STORAGE_SAS_TOKEN}" --delete-destination=true
