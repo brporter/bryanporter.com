@@ -6,7 +6,7 @@ draft: false
 
 The current political climate has seemingly been designed to, above all else, promote engagement and categorization. Sides are picked, and you are either with us or against us. The full-throated standard bearers closest to our political elites make themselves hoarse with endorsement and defense of the persons to which they've attached their politcal fates. People have coat tails, and it's easier to ride on someone else's than make your own and drag others along.
 
-With this in mind policy frequently becomes an all-or-nothing affair. Any policy quibble, no matter how small, is potential ammunition in this political war zone. Most policy proposals are lambasted as anathema to freedom, a trampling of rights, and a distortion of the founder's vision of America. Facts matter very little and outright lies are common place, and presented without hesitation or embarassment.
+With this in mind policy frequently becomes an all-or-nothing affair. Any policy quibble, no matter how small, is potential ammunition in this political war zone. Most policy proposals are lambasted as antithetical to freedom, a trampling of rights, and a distortion of the founder's vision of America. Facts matter very little and outright lies are common place, and presented without hesitation or embarassment.
 
 We can talk about specifics in all of this, and in due course I think I will. Today though, I want to talk about the value of experimentation.
 
