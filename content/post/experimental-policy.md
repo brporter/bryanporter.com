@@ -2,6 +2,7 @@
 title: "Experimental Policy"
 date: 2020-09-07T00:00:00-05:00
 draft: false
+tags: ['politics']
 ---
 
 The current political climate has seemingly been designed to, above all else, promote engagement and categorization. Sides are picked, and you are either with us or against us. The full-throated standard bearers closest to our political elites make themselves hoarse with endorsement and defense of the persons to which they've attached their politcal fates. People have coat tails, and it's easier to ride on someone else's than make your own and drag others along.
