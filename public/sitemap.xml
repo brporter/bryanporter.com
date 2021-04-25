@@ -1,33 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://bryanporter.com/</loc>
+    <lastmod>2021-03-23T10:51:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bryanporter.com/post/placevalue/</loc>
+    <lastmod>2021-03-23T10:51:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bryanporter.com/post/</loc>
+    <lastmod>2021-03-23T10:51:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bryanporter.com/tags/programming/</loc>
+    <lastmod>2021-03-23T10:51:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bryanporter.com/tags/</loc>
+    <lastmod>2021-03-23T10:51:41-05:00</lastmod>
+  </url>
+  
   <url>
     <loc>https://bryanporter.com/post/gone/</loc>
     <lastmod>2021-01-30T00:03:00-05:00</lastmod>
-  </url><url>
-    <loc>https://bryanporter.com/</loc>
-    <lastmod>2021-01-30T00:03:00-05:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://bryanporter.com/tags/life/</loc>
     <lastmod>2021-01-30T00:03:00-05:00</lastmod>
-  </url><url>
-    <loc>https://bryanporter.com/post/</loc>
-    <lastmod>2021-01-30T00:03:00-05:00</lastmod>
-  </url><url>
-    <loc>https://bryanporter.com/tags/</loc>
-    <lastmod>2021-01-30T00:03:00-05:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://bryanporter.com/post/abortion/</loc>
     <lastmod>2020-10-11T12:45:02-05:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://bryanporter.com/tags/politics/</loc>
     <lastmod>2020-10-11T12:45:02-05:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://bryanporter.com/post/experimental-policy/</loc>
     <lastmod>2020-09-07T00:00:00-05:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://bryanporter.com/categories/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://bryanporter.com/series/</loc>
   </url>
+  
 </urlset>

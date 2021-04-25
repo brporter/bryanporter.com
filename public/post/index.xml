@@ -1,41 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Hi, I&#39;m Bryan.</title>
-    <link>https://bryanporter.com/post/</link>
-    <description>Recent content in Posts on Hi, I&#39;m Bryan.</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2020 by Bryan Porter. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 30 Jan 2021 00:03:00 -0500</lastBuildDate><atom:link href="https://bryanporter.com/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Gone</title>
-      <link>https://bryanporter.com/post/gone/</link>
-      <pubDate>Sat, 30 Jan 2021 00:03:00 -0500</pubDate>
-      
-      <guid>https://bryanporter.com/post/gone/</guid>
-      <description>It is late, and while I am not feeling particularly melancholy - quite the opposite, in fact - I have found myself considering my own mortality lately. I suppose that is a thing that&amp;rsquo;s likely to happen when a plague is busy ravaging the land.
-When I consider the stunning fact that I will one day not be present on this earth, I think about all the things I will miss; and then I am overcome with the sure knowledge that I will not miss them at all.</description>
-    </item>
-    
-    <item>
-      <title>Abortion</title>
-      <link>https://bryanporter.com/post/abortion/</link>
-      <pubDate>Sun, 11 Oct 2020 12:45:02 -0500</pubDate>
-      
-      <guid>https://bryanporter.com/post/abortion/</guid>
-      <description>Abortion is a right that should not be interfered with by government. There are innumerable facts as to why this is true.
-Faction The truth is and remains that the people most interested in talking to you about restricting the ability of a woman to obtain an abortion ardently want your vote. They want your vote to establish and entrench their own power. They do not care about the children they profess to desire so strongly to save; if they did, they would follow every legislative act that restricts abortion access with acts that enable more children born into unfortunate circumstances quality access to healthcare, to good schools, to daycare so that their parents can work, and so on.</description>
-    </item>
-    
-    <item>
-      <title>Experimental Policy</title>
-      <link>https://bryanporter.com/post/experimental-policy/</link>
-      <pubDate>Mon, 07 Sep 2020 00:00:00 -0500</pubDate>
-      
-      <guid>https://bryanporter.com/post/experimental-policy/</guid>
-      <description>The current political climate has seemingly been designed to, above all else, promote engagement and categorization. Sides are picked, and you are either with us or against us. The full-throated standard bearers closest to our political elites make themselves hoarse with endorsement and defense of the persons to which they&amp;rsquo;ve attached their politcal fates. People have coat tails, and it&amp;rsquo;s easier to ride on someone else&amp;rsquo;s than make your own and drag others along.</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Posts on Hi, I&#39;m Bryan.</title>
+		<link>https://bryanporter.com/post/</link>
+		<description>Recent content in Posts on bryanporter.com</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© 2020 by Bryan Porter. All rights reserved.</copyright>
+		<lastBuildDate>Tue, 23 Mar 2021 10:51:41 -0500</lastBuildDate>
+		
+		<atom:link href="https://bryanporter.com/post/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Placevalue</title>
+			<link>https://bryanporter.com/post/placevalue/</link>
+			<pubDate>Tue, 23 Mar 2021 10:51:41 -0500</pubDate>
+			
+			<guid>https://bryanporter.com/post/placevalue/</guid>
+			<description>
+				
+				I’m on vacation this week and I’ve been familiarizing myself with Swift, as I get into the phase of a person...
+				
+			</description>
+		</item>
+		<item>
+			<title>Gone</title>
+			<link>https://bryanporter.com/post/gone/</link>
+			<pubDate>Sat, 30 Jan 2021 00:03:00 -0500</pubDate>
+			
+			<guid>https://bryanporter.com/post/gone/</guid>
+			<description>
+				
+				It is late, and while I am not feeling particularly melancholy - quite the opposite, in fact - I have found myself consi...
+				
+			</description>
+		</item>
+		<item>
+			<title>Abortion</title>
+			<link>https://bryanporter.com/post/abortion/</link>
+			<pubDate>Sun, 11 Oct 2020 12:45:02 -0500</pubDate>
+			
+			<guid>https://bryanporter.com/post/abortion/</guid>
+			<description>
+				
+				Abortion is a right that should not be interfered with by government. There are innumerable facts as to why this is true...
+				
+			</description>
+		</item>
+		<item>
+			<title>Experimental Policy</title>
+			<link>https://bryanporter.com/post/experimental-policy/</link>
+			<pubDate>Mon, 07 Sep 2020 00:00:00 -0500</pubDate>
+			
+			<guid>https://bryanporter.com/post/experimental-policy/</guid>
+			<description>
+				
+				The current political climate has seemingly been designed to, above all else, promote engagement and categorization. Sid...
+				
+			</description>
+		</item>
+		
+	</channel>
 </rss>
