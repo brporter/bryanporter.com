@@ -28,13 +28,13 @@ jobs:
     - name: Install Hugo + AzCopy
       run: |
         echo "installing hugo"
-        sudo mkdir -p /home/hugo/
-        sudo curl -L https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-64bit.tar.gz | tar -zxf - --directory /home/hugo
-        sudo mv /home/hugo/hugo /usr/bin
+        mkdir -p .tools/hugo/
+        curl -L https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-64bit.tar.gz | tar -zxf - --directory .tools/hugo
+        sudo mv .tools/hugo/hugo /usr/bin
         echo "installing azcopy"
-        sudo mkdir -p /home/azcopy/
-        sudo curl -L https://aka.ms/downloadazcopy-v10-linux | tar -zxf - --directory /home/azcopy/
-        sudo mv $(find /home/azcopy/ -type f -name azcopy) /usr/bin/
+        mkdir -p .tools/azcopy/
+        curl -L https://aka.ms/downloadazcopy-v10-linux | tar -zxf - --directory .tools/azcopy/
+        sudo mv $(find .tools/azcopy/ -type f -name azcopy) /usr/bin/
 
     # Runs a set of commands using the runners shell
     - name: Run Hugo + AzCopy
