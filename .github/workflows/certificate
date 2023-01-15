@@ -1,0 +1,50 @@
+name: Certificate Renewal
+
+#on:
+#  push:
+#    branches: [ main ]
+        
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          
+    - name: Configure Python
+      uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          
+    - name: Configure CertBot
+      run: |
+        pip3 install certbot certbot-dns-azure
+        
+    - name: Position Secrets
+      run: |
+        ${{ secrets.DNS_CREDENTIALS }} > azuredns.config
+        
+    - name: Retrieve Certificate
+      run: |
+        certbot certonly --dns-azure-config azuredns.config -d bryanporter.com -d '*.bryanporter.com' --key-type rsa --config-dir . --work-dir . --logs-dir . --authenticator dns-azure --preferred-challenges dns --noninteractive --agree-tos --email bryan@bryanporter.com
+        
+    - name: Merge Certificate
+      run: |
+        openssl pkcs12 -export -out live/bryanporter.com/full.pfx -inkey live/bryanporter.com/privkey.pem -in live/bryanporter.com/cert.pem -certfile live/bryanporter.com/chain.pem -passout pass:
+        
+    - name: Deploy Certificate
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+          az keyvault certificate import --vault-name bryanporter --name bryanportercom --file live/bryanporter.com/full.pfx
+          
+    - name: Clear Secrets
+      run: |
+        rm azuredns.config
+          
+    - name: Azure Logout
+      run: |
+        az logout
+      if: always()
