@@ -31,7 +31,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-          az storage blog upload-batch --acount-name bryanporter --auth-mode key -d '$web' -s public/
+          az storage blob upload-batch --acount-name bryanporter --auth-mode key -d '$web' -s public/
           
     - name: Azure Logout
       run: |
