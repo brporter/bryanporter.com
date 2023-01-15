@@ -2,3 +2,20 @@ baseURL = 'https://bryanporter.com'
 languageCode = 'en-us'
 title = 'bryanporter.com'
 theme = 'mainroad'
+
+[Params.logo]
+  image = "img/logo.png"
+  title = "bryanporter.com"
+  subtitle = "Imagining what competence looks like and pretending to be that... and mostly failing."
+
+[Params.sidebar]
+  home = "right"
+  list = "right"
+  single = false
+  widgets = ["recent", "categories", "taglist", "social"]
+
+[Params.widgets.social]
+  github = "brporter"
+  email = "bryan@bryanporter.com"
+
+
