@@ -1,0 +1,4 @@
+baseURL = 'https://bryanporter.com'
+languageCode = 'en-us'
+title = 'bryanporter.com'
+theme = 'mainroad'
