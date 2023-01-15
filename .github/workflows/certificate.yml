@@ -23,7 +23,7 @@ jobs:
         
     - name: Position Secrets
       run: |
-        echo ${{ secrets.DNS_CREDENTIALS }} > azuredns.config
+        echo '${{ secrets.DNS_CREDENTIALS }}' > azuredns.config
         
     - name: Retrieve Certificate
       run: |
