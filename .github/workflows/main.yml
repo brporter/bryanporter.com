@@ -1,0 +1,41 @@
+name: bryanporter.com CI
+
+on:
+  push:
+    branches: [ main ]
+        
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Update Theme
+      run: git submodule update --init --recursive
+      
+    - name: Configure Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true
+        
+    - name: Build
+      run: hugo --minify
+
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Deploy
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+          az storage blob upload-batch --account-name bryanporter --auth-mode key -d '$web' -s public/
+          
+    - name: Azure Logout
+      run: |
+        az logout
+      if: always()
+      
+            
