@@ -1,4 +1,4 @@
-baseURL = 'https://bryanporter.com'
+baseURL = 'https://bryanporter.com/'
 languageCode = 'en-us'
 theme = 'poison'
 paginate = 10
@@ -6,7 +6,7 @@ pluralizelisttitles = false
 
 [params]
   brand = "Phony"
-  brand_image = "img/logo.png"
+  brand_image = "/img/logo.png"
   description = "Imagining what competence looks like and pretending to be that."
   dark_mode = false
 
