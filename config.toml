@@ -1,21 +1,43 @@
 baseURL = 'https://bryanporter.com'
 languageCode = 'en-us'
-title = 'bryanporter.com'
-theme = 'mainroad'
+theme = 'poison'
+paginate = 10
+pluralizelisttitles = false 
 
-[Params.logo]
-  image = "img/logo.png"
-  title = "bryanporter.com"
-  subtitle = "Imagining what competence looks like and pretending to be that... and mostly failing."
+[params]
+  brand = "Phony"
+  brand_image = "img/logo.png"
+  description = "Imagining what competence looks like and pretending to be that."
+  dark_mode = false
 
-[Params.sidebar]
-  home = "right"
-  list = "right"
-  single = false
-  widgets = ["recent", "categories", "taglist", "social"]
+  github_url = "https://github.com/brporter"
+  #gitlab_url = "https://gitlab.com"
+  #linkedin_url = "https://linkedin.com"
+  #twitter_url = "https://twitter.com"
+  #mastodon_url = "https://mastodon.social"
+  #tryhackme_url = "https://tryhackme.com"
+  #discord_url = "https://discord.com"
+  #youtube_url = "https://youtube.com"
+  #instagram_url = "https://instagram.com"
+  #facebook_url = "https://facebook.com"
 
-[Params.widgets.social]
-  github = "brporter"
-  email = "bryan@bryanporter.com"
+  # Hex colors for your sidebar.
+  sidebar_bg_color = "#202020"            # default is #202020
+  sidebar_img_border_color = "#515151"    # default is #515151
+  sidebar_p_color = "#909090"             # default is #909090
+  sidebar_h1_color = "#FFF"               # default is #FFF
+  sidebar_a_color = "#FFF"                # default is #FFF
+  sidebar_socials_color = "#FFF"          # default is #FFF
+  moon_sun_color = "#FFF"                 # default is #FFF
+  moon_sun_background_color = "#515151"   # default is #515151
 
+  # Hex colors for your content in light mode.
+  text_color = "#222"             # default is #222
+  content_bg_color = "#FAF9F6"    # default is #FAF9F6
+  post_title_color = "#303030"    # default is #303030
+  list_color = "#5a5a5a"          # default is #5a5a5a
+  link_color = "#268bd2"          # default is #268bd2
+  date_color = "#515151"          # default is #515151
+  table_border_color = "#E5E5E5"  # default is #E5E5E5
+  table_stripe_color = "#F9F9F9"  # default is #F9F9F9
 
