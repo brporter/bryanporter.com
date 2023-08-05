@@ -6,10 +6,6 @@ categories:
   - "Performance"
 tags:
   - ".NET"
-menu:
-  main:
-    name: Comparing GUID's
-    weight: 4
 ---
 ## Update: FAST? Not so fast.
 
