@@ -6,10 +6,6 @@ categories:
   - "Meta"
 tags:
   - "Meta"
-menu:
-  main:
-    name: First Post
-    weight: 4
 ---
 
 First post. There has to be one.
