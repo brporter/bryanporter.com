@@ -25,6 +25,7 @@ jobs:
     - name: Position Secrets
       run: |
         echo '${{ secrets.DNS_CREDENTIALS }}' > azuredns.config
+        chmod 700 azuredns.config
         
     - name: Retrieve Certificate
       run: |
