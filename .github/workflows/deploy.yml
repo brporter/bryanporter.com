@@ -1,0 +1,67 @@
+# Build the bryanporter.com Jekyll site into a container image and publish it to
+# GHCR. Mirrors the Phosphor / OneBigHead pattern:
+#   1. Build the image (Jekyll → nginx)
+#   2. Push :<sha> and :latest to ghcr.io/brporter/bryanporter
+#   3. Watchtower on shell.betaporter.dev picks up :latest within ~5 min and
+#      recreates the `bryanporter` container (see deploy/vm/docker-compose.yml)
+#
+# The site source lives on the `main` branch. Content updates land via PRs; when
+# a PR merges to `main` this workflow triggers and publishes an updated image. No
+# repository secrets required; the ghcr.io push uses the automatic GITHUB_TOKEN.
+# The ghcr.io/brporter/bryanporter package must be made PUBLIC once (the VM pulls
+# anonymously).
+
+name: Deploy to Production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # allow manual trigger from the Actions tab
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+env:
+  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/bryanporter
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        run: |
+          IMAGE_TAG="${IMAGE_NAME}:${{ github.sha }}"
+          IMAGE_LATEST="${IMAGE_NAME}:latest"
+
+          docker build --platform linux/amd64 \
+            -t "$IMAGE_TAG" -t "$IMAGE_LATEST" .
+          docker push "$IMAGE_TAG"
+          docker push "$IMAGE_LATEST"
+
+          echo "IMAGE_TAG=$IMAGE_TAG" >> "$GITHUB_ENV"
+
+      - name: Deployment summary
+        run: |
+          {
+            echo "## bryanporter.com deployment"
+            echo ""
+            echo "| Resource | Value |"
+            echo "|----------|-------|"
+            echo "| Image | $IMAGE_TAG |"
+            echo "| Deployed via | watchtower on shell.betaporter.dev (~5 min) |"
+            echo "| Commit | ${{ github.sha }} |"
+          } >> "$GITHUB_STEP_SUMMARY"

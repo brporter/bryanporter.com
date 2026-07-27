@@ -1,0 +1,19 @@
+# Production stack for bryanporter.com on shell.betaporter.dev.
+# Deploy to /opt/bryanporter on the VM.  `docker compose up -d`
+#
+# Attaches to the shared external `web` network under alias `bryanporter`; the
+# edge Caddy reverse-proxies bryanporter.com/* here (see shared-infra/Caddyfile).
+# Watchtower redeploys automatically when CI pushes a new :latest to GHCR.
+services:
+  bryanporter:
+    image: ghcr.io/brporter/bryanporter:latest
+    restart: unless-stopped
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    networks:
+      web:
+        aliases: [bryanporter]
+
+networks:
+  web:
+    external: true
