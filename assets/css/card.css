@@ -90,6 +90,23 @@ body {
     font-weight: 500;
 }
 
+/* Clickable pill: the anchor fills the tag so the whole pill is a link. */
+.tags li.tag-link {
+    padding: 0;
+    transition: transform 0.2s;
+}
+
+.tags li.tag-link:hover {
+    transform: scale(1.05);
+}
+
+.tags li.tag-link a {
+    display: block;
+    padding: 6px 14px;
+    color: white;
+    text-decoration: none;
+}
+
 .projects {
     list-style: none;
 }

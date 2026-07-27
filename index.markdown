@@ -30,6 +30,13 @@ layout: card
         </div>
 
         <div class="card-section">
+            <h2>RAGBRAI</h2>
+            <ul class="tags">
+                <li class="tag-link"><a href="{{ '/ragbrai/' | relative_url }}">Follow my ride →</a></li>
+            </ul>
+        </div>
+
+        <div class="card-section">
             <h2>Patents</h2>
             <ul class="patents">
                 <li><a href="https://patents.google.com/patent/US11677639B2" target="_blank">US11677639B2</a> - Connection management between applications and service resources</li>
